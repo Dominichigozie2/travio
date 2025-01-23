@@ -418,7 +418,7 @@ img{
 }
 
 
-
+/* Hero section */
 .hero{
     position: relative;
     display: flex;
@@ -563,3 +563,175 @@ img{
         }
     }
 }
+
+
+
+/* why section */
+.why{
+    padding: 5rem 0;
+    background: var(--lit-bg-500);
+
+    .why-container{
+        display: flex;
+        flex-direction: column;
+        gap: 2rem;
+
+        .why-content{
+            display: flex;
+            flex-direction: column;
+            gap: 5rem;
+
+            .why-heading{
+                display: flex;
+                justify-content: space-between;
+                align-items: end;
+
+                h1{
+                    font-size: 70px;
+                    width: min(39rem, 100%);
+                    font-weight: 500;
+                    color: var(--green-drk-100);
+                }
+
+                a{
+                    padding: 1rem 2rem;
+                    text-decoration: none;
+                    background: var(--green);
+                    color: var(--lit-bg-100);
+                    border-radius: 4ch;
+                    font-weight: 600;
+                    font-size: 16px;
+                }
+            }
+
+            .why-container-details{
+                padding: 2rem;
+                background: var(--lit-bg-100);
+                border-radius: 2ch;
+                display: grid;
+                grid-template-columns: repeat(2, 1fr);
+
+                .why-box{
+                    display: flex;
+                    flex-direction: column;
+                    gap: 1.5rem;
+
+                    h4{
+                        font-size: 32px;
+                        font-weight: 600;
+                        color: var(--green-drk-100);
+                    }
+
+                    ul{
+                        display: flex;
+                        flex-direction: column;
+                        gap: 1.5rem;
+
+                        li{
+                            font-size: 18px;
+                            list-style: none;
+                            display: flex;
+                            align-items: center;
+                            gap: 1rem;
+                            font-weight: 500;
+                            color: var(--text-drk-300);
+                            i{
+                                color: var(--green);
+                            }
+                        }
+                    }
+                }
+                .green{
+                    ul{
+                        li{
+                            i{
+                                color: var(--green-lit-100);
+                            }
+                        }
+                    }
+                }
+            }
+            .why-image-section{
+                display: flex;
+                flex-direction: column;
+                gap: 5rem;
+
+                .first-whyimage{
+                    height: 50vh;
+                    position: relative;
+                    overflow: hidden;
+                    display: flex;
+                    align-items: end;
+                    justify-content: center;
+                    padding: 1rem;
+                    border-radius: 2ch;
+
+                    .page-cloth{
+                        position: absolute;
+                        top: 0;
+                        left: 0;
+                        width: 100%;
+                        height: 100%;
+                        background: rgba(180, 180, 180, 0.609);
+                        z-index: 3;
+                    }
+                
+                    video{
+                        position: absolute;
+                        top: 0;
+                        left: 0;
+                        width: 100%;
+                        height: 100%;
+                        object-fit: cover;
+                        z-index: 1;
+                    }
+
+                    .image-contents{
+                        display: flex;
+                        gap: 2rem;
+                        position: relative;
+                        z-index: 10;
+
+                        p{
+                            display: flex;
+                            gap: 1rem;
+                            font-size: 16px;
+                            font-weight: 500;
+
+                            i{
+                                color: var(--green);
+                            }
+                        }
+                    }
+                }
+                .second-whyimage{
+                    background: url(../img/);
+                    height: 50vh;
+                    position: relative;
+                    overflow: hidden;
+                    display: flex;
+                    align-items: end;
+                    justify-content: center;
+                    padding: 1rem;
+                    border-radius: 2ch;
+
+                    &::after{
+                        position: absolute;
+                        top: 0;
+                        left: 0;
+                        width: 100%;
+                        height: 100%;
+                        background: rgba(180, 180, 180, 0.609);
+                        z-index: 3;
+                    }
+                }
+            }
+        }
+    }
+
+}
+/* why section */
+
+
+
+
