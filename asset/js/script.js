@@ -55,3 +55,22 @@ button2.forEach((btn2) => {
         document.querySelector(`.${colorClass2}`).classList.add('active');
     });
 });
+
+
+
+
+const serveIcons = document.querySelectorAll(".serveicon"); // Select all service plus icons
+
+serveIcons.forEach((icon, index) => {
+   icon.addEventListener("click", () => {
+       const serviceCards = document.querySelectorAll(".service-card"); // Select all service cards
+       
+    
+
+       // Add "active" class only to the card associated with the clicked button
+       serviceCards[index].classList.toggle("active");
+   });
+});
+
+
+
