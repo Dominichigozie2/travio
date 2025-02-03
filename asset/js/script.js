@@ -74,3 +74,48 @@ serveIcons.forEach((icon, index) => {
 
 
 
+// quantity
+
+document.addEventListener("DOMContentLoaded", function () {
+    const quantityDivs = document.querySelectorAll(".quantity");
+
+    quantityDivs.forEach(quantityDiv => {
+        const minusBtn = quantityDiv.querySelector(".fa-minus");
+        const plusBtn = quantityDiv.querySelector(".fa-plus");
+        const countElement = quantityDiv.querySelector(".count");
+
+        minusBtn.addEventListener("click", function () {
+            let count = parseInt(countElement.textContent);
+            if (count > 1) {
+                countElement.textContent = count - 1;
+            }
+        });
+
+        plusBtn.addEventListener("click", function () {
+            let count = parseInt(countElement.textContent);
+            countElement.textContent = count + 1;
+        });
+    });
+});
+
+
+
+
+document.addEventListener("DOMContentLoaded", function () {
+    const userText = document.querySelector(".user");
+    const voucherForm = document.querySelector(".form");
+    const closeIcon = document.querySelector("#times");
+
+    // Hide the form initially
+    voucherForm.style.display = "none";
+
+    userText.addEventListener("click", function () {
+        voucherForm.style.display = "flex"; // Show form
+        userText.style.display = "none"; // Hide user text
+    });
+
+    closeIcon.addEventListener("click", function () {
+        voucherForm.style.display = "none"; // Hide form
+        userText.style.display = "flex"; // Show user text
+    });
+});
