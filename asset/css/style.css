@@ -1012,7 +1012,6 @@ aside.active{
 }
 
 
-
 /* why section */
 .why{
     padding: 5rem 0;
@@ -1104,7 +1103,7 @@ aside.active{
                 gap: 5rem;
 
                 .first-whyimage{
-                    height: 35rem;
+                    height: 50vh;
                     position: relative;
                     overflow: hidden;
                     display: flex;
@@ -1153,7 +1152,7 @@ aside.active{
                 }
                 .second-whyimage{
                     background: url(../img/bgd.jpg.crdownload);
-                    height: 35rem;
+                    height: 60vh;
                     position: relative;
                     overflow: hidden;
                     display: flex;
@@ -1277,7 +1276,7 @@ aside.active{
 
                     }
 
-                    .trezorsafe-card{
+                    .safetrezorsafe-card{
                         position: relative;
                         overflow: hidden;
                         border-radius: 2ch;
@@ -1381,7 +1380,6 @@ aside.active{
 
 }
 /* why section */
-
 
 /* manage */
 .manage{
@@ -2259,7 +2257,7 @@ footer{
             }
         }
 
-         .trezorsaf-card{
+         .safetrezorsaf-card{
             position: relative;
             overflow: hidden;
             border-radius: 2ch;
@@ -2424,6 +2422,10 @@ footer{
 }
 
 
+/* why section */
+
+
+
 .session{
     padding: 5rem 0;
 
@@ -2546,7 +2548,7 @@ footer{
             }
         }
 
-         .trezorsaf-card{
+         .safetrezorsaf-card{
             position: relative;
             overflow: hidden;
             border-radius: 2ch;
@@ -3025,8 +3027,6 @@ footer{
 
 
 
-
- 
     
     /* checkout Page */
 
@@ -5970,7 +5970,7 @@ footer{
                         border-radius: 1ch;
                         transition: all 400ms ease;
 
-                           a{
+                        a{
                             display: flex;
                             gap: 1rem;
                             align-items: center;
@@ -5996,7 +5996,7 @@ footer{
                             background: var(--lit-bg-300);
                         }
                     }
-                    }
+                        }
                     }
                         
                 }
@@ -7264,19 +7264,6 @@ footer{
             }
         }
     }
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 }
 
