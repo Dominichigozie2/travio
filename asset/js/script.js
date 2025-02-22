@@ -119,3 +119,48 @@ document.addEventListener("DOMContentLoaded", function () {
         userText.style.display = "flex"; // Show user text
     });
 });
+
+
+
+
+const drop = document.querySelector('.dropbtn');
+
+drop.addEventListener('click', function() {
+//    alert('You clicked the drop down button');
+
+   const dropicon = document.querySelector('.plus');
+   const dropcon = document.querySelector('.sidnavdropdown');
+
+   dropcon.classList.toggle('active');
+   dropicon.classList.toggle('fa-minus');
+});
+
+
+const drop2 = document.querySelector('.dropbtn2');
+
+drop2.addEventListener('click', function() {
+//    alert('You clicked the drop down button');
+
+   const dropicon = document.querySelector('.plus');
+   const dropcon = document.querySelector('.sidnavdropdown2');
+
+   dropcon.classList.toggle('active');
+   dropicon.classList.toggle('fa-minus');
+});
+
+
+
+
+
+const menubar = document.querySelector('.menutogler');
+
+menubar.addEventListener('click', function() {
+
+   const sidebar = document.querySelector('aside');
+
+   sidebar.classList.toggle('active');
+   menubar.classList.toggle('fa-times');
+});
+
+
+
