@@ -2055,7 +2055,7 @@ aside.active{
 
 .faq-answer p {
     padding: 1rem;
-    font-size: 18px;
+    font-size: 16px;
     line-height: 23px;
     color: #696969;
     width: 92%;
@@ -6524,6 +6524,18 @@ footer{
 }           
 
 
+.faq-answer p {
+    font-size: 14px;
+}
+
+.faq-question h3 {
+    font-size: 12px;
+    margin: 0;
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+}
+
 
 }
 
@@ -8113,7 +8125,6 @@ footer{
 
 
 }
-
 @media(width < 380px){
     .product-hero{
         .product-container{
